@@ -1,0 +1,22 @@
+COMMAND    PID USER   FD   TYPE             DEVICE SIZE/OFF    NODE NAME
+error_fil 4289 ming  cwd    DIR                8,5     4096 1718805 /home/ming/Documents/Linux/Linux环境编程/File
+error_fil 4289 ming  rtd    DIR                8,5     4096       2 /
+error_fil 4289 ming  txt    REG                8,5    16800 1722052 /home/ming/Documents/Linux/Linux环境编程/File/error_file_create
+error_fil 4289 ming  mem    REG                8,5  2029224 2365272 /usr/lib/x86_64-linux-gnu/libc-2.31.so
+error_fil 4289 ming  mem    REG                8,5   191472 2365056 /usr/lib/x86_64-linux-gnu/ld-2.31.so
+error_fil 4289 ming    0u   CHR              136,1      0t0       4 /dev/pts/1
+error_fil 4289 ming    1u   CHR              136,1      0t0       4 /dev/pts/1
+error_fil 4289 ming    2u   CHR              136,1      0t0       4 /dev/pts/1
+error_fil 4289 ming    3w   REG                8,5        0 1722053 /home/ming/Documents/Linux/Linux环境编程/File/0.txt
+error_fil 4289 ming    4w   REG                8,5        0 1722054 /home/ming/Documents/Linux/Linux环境编程/File/1.txt
+error_fil 4289 ming    5w   REG                8,5        0 1722055 /home/ming/Documents/Linux/Linux环境编程/File/2.txt
+error_fil 4289 ming    6w   REG                8,5        0 1722056 /home/ming/Documents/Linux/Linux环境编程/File/3.txt
+error_fil 4289 ming   21r   REG                7,0   172330    3343 /snap/code/62/usr/share/code/v8_context_snapshot.bin
+error_fil 4289 ming   31r   REG               0,23        0   57093 /proc/3048/statm
+error_fil 4289 ming   32r   REG               0,23        0   58025 /proc/3048/status
+error_fil 4289 ming   33u   REG                8,5    10543 2228243 /tmp/.org.chromium.Chromium.jZyP5t (deleted)
+error_fil 4289 ming   34u  unix 0x0000000000000000      0t0   57095 type=STREAM
+error_fil 4289 ming   40r   REG                7,0  5462571    3067 /snap/code/62/usr/share/code/resources/app/node_modules.asar
+error_fil 4289 ming   41r   REG                7,0  5462571    3067 /snap/code/62/usr/share/code/resources/app/node_modules.asar
+error_fil 4289 ming   42r   REG                8,5   389764  525943 /usr/share/fonts/truetype/liberation2/LiberationSerif-Regular.ttf
+error_fil 4289 ming  103r   REG                7,0   172330    3343 /snap/code/62/usr/share/code/v8_context_snapshot.bin

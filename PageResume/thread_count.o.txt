@@ -1,0 +1,98 @@
+
+thread_count.o:     file format elf64-x86-64
+
+Contents of section .text:
+ 0000 f30f1efa 554889e5 48897de8 c745fc00  ....UH..H.}..E..
+ 0010 000000eb 138b0500 00000083 c0018905  ................
+ 0020 00000000 8345fc01 817dfc7f 9698007e  .....E...}.....~
+ 0030 e4b80000 00005dc3 f30f1efa 554889e5  ......].....UH..
+ 0040 4883ec20 64488b04 25280000 00488945  H.. dH..%(...H.E
+ 0050 f831c048 8d45e8b9 00000000 488d159d  .1.H.E......H...
+ 0060 ffffffbe 00000000 4889c7e8 00000000  ........H.......
+ 0070 488d45f0 b9000000 00488d15 80ffffff  H.E......H......
+ 0080 be000000 004889c7 e8000000 00488b45  .....H.......H.E
+ 0090 e8be0000 00004889 c7e80000 0000488b  ......H.......H.
+ 00a0 45f0be00 00000048 89c7e800 0000008b  E......H........
+ 00b0 05000000 0089c648 8d3d0000 0000b800  .......H.=......
+ 00c0 000000e8 00000000 b8000000 00488b55  .............H.U
+ 00d0 f8644833 14252800 00007405 e8000000  .dH3.%(...t.....
+ 00e0 00c9c3                               ...             
+Contents of section .rodata:
+ 0000 436f756e 74657220 69732025 64206279  Counter is %d by
+ 0010 20746872 65616473 0a00                threads..      
+Contents of section .comment:
+ 0000 00474343 3a202855 62756e74 7520392e  .GCC: (Ubuntu 9.
+ 0010 332e302d 31377562 756e7475 317e3230  3.0-17ubuntu1~20
+ 0020 2e303429 20392e33 2e3000             .04) 9.3.0.     
+Contents of section .note.gnu.property:
+ 0000 04000000 10000000 05000000 474e5500  ............GNU.
+ 0010 020000c0 04000000 03000000 00000000  ................
+Contents of section .eh_frame:
+ 0000 14000000 00000000 017a5200 01781001  .........zR..x..
+ 0010 1b0c0708 90010000 1c000000 1c000000  ................
+ 0020 00000000 38000000 00450e10 8602430d  ....8....E....C.
+ 0030 066f0c07 08000000 1c000000 3c000000  .o..........<...
+ 0040 00000000 ab000000 00450e10 8602430d  .........E....C.
+ 0050 0602a20c 07080000                    ........        
+
+Disassembly of section .text:
+
+0000000000000000 <thread>:
+   0:	f3 0f 1e fa          	endbr64 
+   4:	55                   	push   %rbp
+   5:	48 89 e5             	mov    %rsp,%rbp
+   8:	48 89 7d e8          	mov    %rdi,-0x18(%rbp)
+   c:	c7 45 fc 00 00 00 00 	movl   $0x0,-0x4(%rbp)
+  13:	eb 13                	jmp    28 <thread+0x28>
+  15:	8b 05 00 00 00 00    	mov    0x0(%rip),%eax        # 1b <thread+0x1b>
+  1b:	83 c0 01             	add    $0x1,%eax
+  1e:	89 05 00 00 00 00    	mov    %eax,0x0(%rip)        # 24 <thread+0x24>
+  24:	83 45 fc 01          	addl   $0x1,-0x4(%rbp)
+  28:	81 7d fc 7f 96 98 00 	cmpl   $0x98967f,-0x4(%rbp)
+  2f:	7e e4                	jle    15 <thread+0x15>
+  31:	b8 00 00 00 00       	mov    $0x0,%eax
+  36:	5d                   	pop    %rbp
+  37:	c3                   	retq   
+
+0000000000000038 <main>:
+  38:	f3 0f 1e fa          	endbr64 
+  3c:	55                   	push   %rbp
+  3d:	48 89 e5             	mov    %rsp,%rbp
+  40:	48 83 ec 20          	sub    $0x20,%rsp
+  44:	64 48 8b 04 25 28 00 	mov    %fs:0x28,%rax
+  4b:	00 00 
+  4d:	48 89 45 f8          	mov    %rax,-0x8(%rbp)
+  51:	31 c0                	xor    %eax,%eax
+  53:	48 8d 45 e8          	lea    -0x18(%rbp),%rax
+  57:	b9 00 00 00 00       	mov    $0x0,%ecx
+  5c:	48 8d 15 9d ff ff ff 	lea    -0x63(%rip),%rdx        # 0 <thread>
+  63:	be 00 00 00 00       	mov    $0x0,%esi
+  68:	48 89 c7             	mov    %rax,%rdi
+  6b:	e8 00 00 00 00       	callq  70 <main+0x38>
+  70:	48 8d 45 f0          	lea    -0x10(%rbp),%rax
+  74:	b9 00 00 00 00       	mov    $0x0,%ecx
+  79:	48 8d 15 80 ff ff ff 	lea    -0x80(%rip),%rdx        # 0 <thread>
+  80:	be 00 00 00 00       	mov    $0x0,%esi
+  85:	48 89 c7             	mov    %rax,%rdi
+  88:	e8 00 00 00 00       	callq  8d <main+0x55>
+  8d:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+  91:	be 00 00 00 00       	mov    $0x0,%esi
+  96:	48 89 c7             	mov    %rax,%rdi
+  99:	e8 00 00 00 00       	callq  9e <main+0x66>
+  9e:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+  a2:	be 00 00 00 00       	mov    $0x0,%esi
+  a7:	48 89 c7             	mov    %rax,%rdi
+  aa:	e8 00 00 00 00       	callq  af <main+0x77>
+  af:	8b 05 00 00 00 00    	mov    0x0(%rip),%eax        # b5 <main+0x7d>
+  b5:	89 c6                	mov    %eax,%esi
+  b7:	48 8d 3d 00 00 00 00 	lea    0x0(%rip),%rdi        # be <main+0x86>
+  be:	b8 00 00 00 00       	mov    $0x0,%eax
+  c3:	e8 00 00 00 00       	callq  c8 <main+0x90>
+  c8:	b8 00 00 00 00       	mov    $0x0,%eax
+  cd:	48 8b 55 f8          	mov    -0x8(%rbp),%rdx
+  d1:	64 48 33 14 25 28 00 	xor    %fs:0x28,%rdx
+  d8:	00 00 
+  da:	74 05                	je     e1 <main+0xa9>
+  dc:	e8 00 00 00 00       	callq  e1 <main+0xa9>
+  e1:	c9                   	leaveq 
+  e2:	c3                   	retq   

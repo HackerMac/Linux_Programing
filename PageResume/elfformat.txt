@@ -1,0 +1,58 @@
+ELF Header:
+Magic: 7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00
+Class: ELF32
+Data: 2's complement, little endian
+Version: 1 (current)
+OS/ABI: UNIX - System V
+ABI Version: 0
+Type: EXEC (Executable file)
+Machine: Intel 80386
+Version: 0x1
+Entry point address: 0x8048320
+Start of program headers: 52 (bytes into file)
+Start of section headers: 5148 (bytes into file)
+Flags: 0x0
+Size of this header: 52 (bytes)
+Size of program headers: 32 (bytes)
+Number of program headers: 9
+Size of section headers: 40 (bytes)
+Number of section headers: 36
+Section header string table index: 33
+Section Headers:
+[Nr] Name Type Addr Off Size ES Flg Lk Inf Al
+[ 0] NULL 00000000 000000 000000 00 0 0 0
+[ 1] .interp PROGBITS 08048154 000154 000013 00 A 0 0 1
+[ 2] .note.ABI-tag NOTE 08048168 000168 000020 00 A 0 0 4
+[ 3] .note.gnu.build-i NOTE 08048188 000188 000024 00 A 0 0 4
+[ 4] .gnu.hash GNU_HASH 080481ac 0001ac 000020 04 A 5 0 4
+[ 5] .dynsym DYNSYM 080481cc 0001cc 000050 10 A 6 1 4
+[ 6] .dynstr STRTAB 0804821c 00021c 00004a 00 A 0 0 1
+[ 7] .gnu.version VERSYM 08048266 000266 00000a 02 A 5 0 2
+[ 8] .gnu.version_r VERNEED 08048270 000270 000020 00 A 6 1 4
+[ 9] .rel.dyn REL 08048290 000290 000008 08 A 5 0 4
+[10] .rel.plt REL 08048298 000298 000018 08 A 5 12 4
+[11] .init PROGBITS 080482b0 0002b0 000024 00 AX 0 0 4
+[12] .plt PROGBITS 080482e0 0002e0 000040 04 AX 0 0 16
+[13] .text PROGBITS 08048320 000320 000188 00 AX 0 0 16
+[14] .fini PROGBITS 080484a8 0004a8 000015 00 AX 0 0 4
+[15] .rodata PROGBITS 080484c0 0004c0 000015 00 A 0 0 4
+[16] .eh_frame_hdr PROGBITS 080484d8 0004d8 000034 00 A 0 0 4
+[17] .eh_frame PROGBITS 0804850c 00050c 0000c4 00 A 0 0 4
+[18] .init_array INIT_ARRAY 08049f08 000f08 000004 00 WA 0 0 4
+[19] .fini_array FINI_ARRAY 08049f0c 000f0c 000004 00 WA 0 0 4
+[20] .jcr PROGBITS 08049f10 000f10 000004 00 WA 0 0 4
+[21] .dynamic DYNAMIC 08049f14 000f14 0000e8 08 WA 6 0 4
+[22] .got PROGBITS 08049ffc 000ffc 000004 04 WA 0 0 4
+[23] .got.plt PROGBITS 0804a000 001000 000018 04 WA 0 0 4
+[24] .data PROGBITS 0804a018 001018 000008 00 WA 0 0 4
+[25] .bss NOBITS 0804a020 001020 000004 00 WA 0 0 4
+[26] .comment PROGBITS 00000000 001020 00006b 01 MS 0 0 1
+[27] .debug_aranges PROGBITS 00000000 00108b 000020 00 0 0 1
+[28] .debug_info PROGBITS 00000000 0010ab 000094 00 0 0 1
+[29] .debug_abbrev PROGBITS 00000000 00113f 000044 00 0 0 1
+[30] .debug_line PROGBITS 00000000 001183 000043 00 0 0 1
+[31] .debug_str PROGBITS 00000000 0011c6 0000cb 01 MS 0 0 1
+[32] .debug_loc PROGBITS 00000000 001291 000038 00 0 0 1
+[33] .shstrtab STRTAB 00000000 0012c9 000151 00 0 0 1
+[34] .symtab SYMTAB 00000000 0019bc 000490 10 35 51 4
+[35] .strtab STRTAB 00000000 001e4c 00025a 00 0 0 1

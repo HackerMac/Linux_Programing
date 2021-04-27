@@ -1,0 +1,6 @@
+thread1                         thread2
+lock                            lock
+eax =0                          eax = counter => eax = 1
+eax = eax +1 => eax = 1         eax = eax+1 => eax = 2        
+counter = eax => counter = 1    counter = eax => counter = 2
+unlock                          unlock
